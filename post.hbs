@@ -105,6 +105,9 @@ into the {body} of the default.hbs template --}}
             </figure>
             {{/if}}
 
+            {{! Show an advert above the post content }}
+            <input type="hidden" name="IL_IN_ARTICLE">
+
             <section class="post-full-content">
                 <div class="post-content">
                     {{content}}
@@ -212,4 +215,9 @@ into the {body} of the default.hbs template --}}
         });
     });
 </script>
+
+<!-- Infolinks advertising -->
+<script type="text/javascript">var infolinks_pid = 3253450; var infolinks_wsid = 0;</script>
+<script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
+
 {{/contentFor}}
